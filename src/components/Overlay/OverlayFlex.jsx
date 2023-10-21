@@ -23,10 +23,10 @@ const OverlayFlex = (props) => {
         transition={"all"}
         transitionDuration={".6s"}
         bgGradient="linear(to-tr, #a65efe88, #3548f188, #3548f188, #2c78d588  )"
-        opacity="0"
+        transform="translateY(100%)"
         sx={{
           ".team_box:hover &": {
-            opacity: "1",
+            transform: "translateY(0)",
           },
         }}
       >
