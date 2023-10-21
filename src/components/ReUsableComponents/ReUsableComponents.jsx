@@ -32,7 +32,6 @@ export const SectionHeading = (props) => {
 export const ReUsableGrid = (props) => {
   return (
     <GridItem
-      key={props.key}
       border={props.border}
       borderColor="whiteAlpha.300"
       transition="all"
@@ -52,7 +51,7 @@ export const GridImg = (props) => {
 
 export const GridTitle = (props) => {
   return (
-    <Text color={"white"} fontSize={"22px"} fontWeight={"400"} mb={"1.7rem"}>
+    <Text color={"white"} fontSize={"22px"} fontWeight={"400"} mb={"1.3rem"}>
       {props.children}
     </Text>
   );
@@ -65,7 +64,7 @@ export const GridDes = (props) => {
       fontSize={"14px"}
       fontWeight={"300"}
       lineHeight={"1.7em"}
-      mb={"1.7rem"}
+      mb={"1.3rem"}
     >
       {props.children}
     </Text>

@@ -6,6 +6,8 @@ import Cryptize from "./components/Cryptize/Cryptize";
 import WhyCryptize from "./components/WhyCryptize/WhyCryptize";
 import Expert from "./components/Expert/Expert";
 import Guide from "./components/Guide/Guide";
+import Features from "./components/Features/Features";
+import Team from "./components/Team/Team";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <WhyCryptize />
       <Expert />
       <Guide />
+      <Features />
+      <Team />
     </div>
   );
 }
