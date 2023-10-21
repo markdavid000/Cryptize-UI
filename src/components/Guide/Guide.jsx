@@ -4,7 +4,7 @@ import {
   SectionHeading,
 } from "../ReUsableComponents/ReUsableComponents";
 import { GuideBtn } from "./GuideBtn";
-import GuideGridItems from "./GuidegridItems";
+import GuideGridItems from "./GuideGridItems";
 import { Box } from "@chakra-ui/react";
 
 const Guide = () => {
