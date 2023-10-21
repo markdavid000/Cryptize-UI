@@ -10,13 +10,13 @@ const GuideGridItems = () => {
       border: "1px",
     },
     {
-      img: "./img/icon_5_2.png",
+      img: "./img/icon_7_3.png",
       title: "Create Your Wallet",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
       border: "1px",
     },
     {
-      img: "./img/icon_7_3.png",
+      img: "./img/icon_5_3.png",
       title: "Create Your Wallet",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
       border: "0",
