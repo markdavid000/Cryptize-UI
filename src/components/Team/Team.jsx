@@ -8,7 +8,7 @@ import TeamFlexItem from "./TeamFlexItem";
 
 const Team = () => {
   return (
-    <Box maxW={'1150px'} mx={'auto'}>
+    <Box maxW={'1150px'} mx={'auto'} pt={'3rem'} pb={'7rem'}>
       <Box textAlign={'center'} mb={'5rem'}>
         <TextGradient>Our Expert</TextGradient>
         <SectionHeading>Experienced Expert In Cryptize</SectionHeading>

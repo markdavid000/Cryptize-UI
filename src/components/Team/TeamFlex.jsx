@@ -1,12 +1,17 @@
 import React from "react";
 import { Image, Box, Flex } from "@chakra-ui/react";
-import Overlay from "../Overlay/Overlay";
+import Overlay from "./Overlay/Overlay";
+import {
+  OverlayItems,
+  OverlayItemName,
+  OverlayItemPosition,
+} from "./Overlay/OverlayItems";
 
 const TeamFlex = (props) => {
   return (
     <Box>
       <Flex gap={"2rem"}>
-        {props.imgs.map((img, index) => (
+        {props.items.map((item, index) => (
           <Box
             key={index}
             className="team_box"
@@ -19,8 +24,12 @@ const TeamFlex = (props) => {
               transform: "translateY(-7px)",
             }}
           >
-            <Image src={img.img} />
-            <Overlay />
+            <Image src={item.img} />
+            <Overlay>
+              <OverlayItemName>{item.name}</OverlayItemName>
+              <OverlayItemPosition>{item.position}</OverlayItemPosition>
+              <OverlayItems />
+            </Overlay>
           </Box>
         ))}
       </Flex>

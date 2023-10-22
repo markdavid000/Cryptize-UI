@@ -4,7 +4,7 @@ import {
   FacebookIcon,
   TwitterIcon,
   PinterestIcon,
-} from "../../assets/svg/Icon";
+} from "../../../assets/svg/Icon";
 
 export const OverlayItems = () => {
   return (

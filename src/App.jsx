@@ -8,6 +8,7 @@ import Expert from "./components/Expert/Expert";
 import Guide from "./components/Guide/Guide";
 import Features from "./components/Features/Features";
 import Team from "./components/Team/Team";
+import Testimonial from "./components/Testimonial/Testimonial";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Guide />
       <Features />
       <Team />
+      <Testimonial />
     </div>
   );
 }

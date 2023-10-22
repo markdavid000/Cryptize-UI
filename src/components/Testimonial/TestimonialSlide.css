@@ -1,0 +1,14 @@
+.slick-dots li button::before {
+  font-size: 10px !important;
+  margin: 0 5px;
+  border: none;
+  color: #fff !important;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button::before {
+  font-size: 12px !important;
+  margin: 0 5px;
+  border: none;
+  color: #fff !important;
+  border-radius: 50%;
+}

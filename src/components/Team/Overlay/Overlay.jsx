@@ -1,12 +1,7 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
-import {
-  OverlayItems,
-  OverlayItemName,
-  OverlayItemPosition,
-} from "./OverlayItems";
 
-const OverlayFlex = (props) => {
+const Overlay = (props) => {
   return (
     <Box>
       <Box
@@ -30,12 +25,10 @@ const OverlayFlex = (props) => {
           },
         }}
       >
-        <OverlayItemName>Adam Stark</OverlayItemName>
-        <OverlayItemPosition>CEO Cryptize</OverlayItemPosition>
-        <OverlayItems />
+        {props.children}
       </Box>
     </Box>
   );
 };
 
-export default OverlayFlex;
+export default Overlay;
