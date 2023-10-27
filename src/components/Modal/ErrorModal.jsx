@@ -24,8 +24,8 @@ const ModalOverlay = (props) => {
       bgGradient="linear(to-tr, #A55EFE, #3547F1, #3547F1, #2C79D5)"
       position={"fixed"}
       top={"30vh"}
-      left={"25%"}
-      w={"50%"}
+      left={["0", "12.5%", "25%"]}
+      w={["100%", "75%", "50%"]}
       zIndex={"100"}
       className={classes.modal}
     >
