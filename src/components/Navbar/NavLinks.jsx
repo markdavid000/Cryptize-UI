@@ -8,7 +8,7 @@ export const NavLinks = (props) => {
       _hover={{ color: "white" }}
       fontWeight={400}
       fontSize={"14px"}
-      href="#"
+      href="!#"
     >
       {props.children}
     </Link>
