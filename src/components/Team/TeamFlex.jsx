@@ -10,7 +10,7 @@ import {
 const TeamFlex = (props) => {
   return (
     <Box>
-      <Flex gap={"2rem"}>
+      <Flex gap={"2rem"} flexDirection={["column", "column", "row"]}>
         {props.items.map((item, index) => (
           <Box
             key={index}

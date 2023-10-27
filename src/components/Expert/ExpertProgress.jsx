@@ -3,7 +3,7 @@ import { Box, Text, Stack, Progress, Flex } from "@chakra-ui/react";
 
 const ExpertProgress = (props) => {
   return (
-    <Stack w={"85%"} spacing={"24px"}>
+    <Stack w={["100%", "100%", "100%", "85%"]} spacing={"24px"}>
       {props.items.map((item, index) => (
         <Box key={index}>
           <Flex

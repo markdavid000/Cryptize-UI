@@ -9,7 +9,7 @@ import { Box } from "@chakra-ui/react";
 
 const Guide = () => {
   return (
-    <Box maxW={"1150px"} mx={"auto"} pb={'5rem'}>
+    <Box maxW={"1150px"} mx={"auto"} pb={'5rem'} px={'1rem'}>
       <Box textAlign={"center"} mb={'5rem'}>
         <TextGradient>Step By Step Guide</TextGradient>
         <SectionHeading>Easy Steps to Success</SectionHeading>

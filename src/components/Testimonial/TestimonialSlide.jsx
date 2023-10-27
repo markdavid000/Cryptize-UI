@@ -27,7 +27,7 @@ const TestimonialSlide = (props) => {
       w={"100%"}
       pt={"30px"}
       pb={"50px"}
-      px={"50px"}
+      px={["20px", "20px", "20px", "50px"]}
     >
       <Slider {...settings}>
         {props.items.map((item, index) => (
@@ -37,12 +37,17 @@ const TestimonialSlide = (props) => {
               mb={"2rem"}
               fontSize={"14px"}
               fontWeight={"400"}
+              textAlign={["center", "center", "center", "left"]}
             >
               {item.quote}
             </Text>
-            <Flex alignItems={"center"} gap={"1rem"}>
+            <Flex
+              alignItems={"center"}
+              gap={"1rem"}
+              flexDirection={["column", "column", "column", "row"]}
+            >
               <Image src={item.img} boxSize={"60px"} borderRadius={"50%"} />
-              <Box>
+              <Box textAlign={["center", "center", "center", "left"]}>
                 <Text color={"white"} fontSize={"22px"} fontWeight={"400"}>
                   {item.name}
                 </Text>

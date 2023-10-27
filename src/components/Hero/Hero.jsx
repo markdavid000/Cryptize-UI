@@ -9,14 +9,18 @@ const Hero = () => {
       //   h={"100vh"}
       w={"100%"}
       bgGradient="linear(to-tr, #A55EFE, #724BFD, #3547F1, #3547F1, #2C79D5, #2C79D5)"
-      pt={"14rem"}
+      pt={["10rem", "11rem", "12rem", "13rem", "14rem"]}
     >
-      <Box maxW={"1150px"} mx={"auto"}>
-        <Flex alignItems={"center"}>
+      <Box maxW={"1150px"} mx={"auto"} px={"1rem"}>
+        <Flex
+          alignItems={"center"}
+          flexDirection={["column", "column", "column", "row"]}
+          gap={"2rem"}
+        >
           <Box w={"100%"}>
             <Heading
               as={"h1"}
-              fontSize={"70px"}
+              fontSize={["40px", "50px", "60px", "70px"]}
               fontWeight={"400"}
               lineHeight={"1.2em"}
               color={"white"}
@@ -24,8 +28,8 @@ const Hero = () => {
               Your Trusted Crypto Currency Partner
             </Heading>
             <Text
-              mt={"2.8rem"}
-              w={"60%"}
+              mt={["1.2rem", "2rem", "2.8rem"]}
+              w={["80%", "70%", "60%"]}
               color={"white"}
               fontWeight={"300"}
               fontSize={"14px"}
@@ -42,8 +46,8 @@ const Hero = () => {
         </Flex>
       </Box>
       <Box mt={"20px"}>
-        <Flex justify={"space-between"}>
-          <Box w={"100%"}></Box>
+        <Flex justify={["center", "center", 'center', "space-between"]}>
+          <Box w={["0", "0", "0", "100%"]}></Box>
           <Box w={"90%"} bg={"black"} p={"30px"}>
             <HeroNumbers />
           </Box>

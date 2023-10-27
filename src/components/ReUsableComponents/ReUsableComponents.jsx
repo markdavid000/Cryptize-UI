@@ -19,7 +19,7 @@ export const SectionHeading = (props) => {
     <Heading
       mt={"1rem"}
       color={"white"}
-      fontSize={"45px"}
+      fontSize={["35px", "40px", "45px"]}
       fontWeight={"400"}
       lineHeight={"1.5em"}
       letterSpacing={"wider"}

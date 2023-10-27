@@ -10,6 +10,8 @@ import Features from "./components/Features/Features";
 import Team from "./components/Team/Team";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Contact from "./components/Contact/Contact";
+import CTA from "./components/CTA/CTA";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
       <Team />
       <Testimonial />
       <Contact />
+      <CTA />
+      <Footer />
     </div>
   );
 }

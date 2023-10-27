@@ -9,19 +9,23 @@ import {
 
 const Cryptize = () => {
   return (
-    <Box maxW={"1150px"} mx={"auto"} py={"8rem"}>
-      <Flex alignItems={"center"} gap={"5rem"}>
+    <Box maxW={"1150px"} mx={"auto"} py={"8rem"} px={"1rem"}>
+      <Flex
+        alignItems={"center"}
+        gap={["3rem", "4rem", "5rem"]}
+        flexDirection={["column-reverse", "column-reverse", "row"]}
+      >
         <Box w={"100%"}>
-          <Image src='./img/Asset-3_2.png' />
+          <Image src="./img/Asset-3_2.png" />
         </Box>
-        <Box w={"100%"}>
+        <Box w={"100%"} textAlign={["center", "center", "left"]}>
           <TextGradient>Welcome to Cryptize</TextGradient>
           <SectionHeading>
             We Take Care of <br /> Your Money
           </SectionHeading>
           <Text
             mt={"1rem"}
-            w={"85%"}
+            w={["100%", "100%", "85%"]}
             color={"white"}
             fontSize={"14px"}
             fontWeight={"300"}

@@ -3,10 +3,10 @@ import { Box, Button } from "@chakra-ui/react";
 import ComingSoonModal from "../Modal/ComingSoonModal";
 import { BiSolidMessageAltError } from "react-icons/bi";
 
-export const HeroBtn = (props) => {
+export const CTABtn = (props) => {
   const [message, setMessage] = useState();
 
-  const applyHandler = (e) => {
+  const getStartedHandler = (e) => {
     e.preventDefault();
 
     return setMessage({
@@ -29,8 +29,8 @@ export const HeroBtn = (props) => {
         />
       )}
       <Button
-        onClick={applyHandler}
-        mt={["1.5rem", "2rem", "2.5rem"]}
+        onClick={getStartedHandler}
+        mt={"2.5rem"}
         py={"1.5rem"}
         px={"2.5rem"}
         borderRadius={"0"}

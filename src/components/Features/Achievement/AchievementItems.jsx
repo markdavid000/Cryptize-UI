@@ -5,22 +5,22 @@ const AchievementItems = () => {
   const achievementItems = [
     {
       img: "./img/icon_10_3.png",
-      title: "100+",
+      title: "100",
       desc: "Worldwide Office",
     },
     {
       img: "./img/icon_10_3.png",
-      title: "52+",
+      title: "52",
       desc: "Award Winning",
     },
     {
       img: "./img/icon_10_3.png",
-      title: "1,000+",
+      title: "1000",
       desc: "Active User",
     },
     {
       img: "./img/icon_10_3.png",
-      title: "84+",
+      title: "84",
       desc: "Crypto Experts",
     },
   ];

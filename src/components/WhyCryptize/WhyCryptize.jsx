@@ -8,7 +8,7 @@ import {
 
 const WhyCryptize = () => {
   return (
-    <Box maxW={"1150PX"} mx={"auto"} py={"4rem"}>
+    <Box maxW={"1150PX"} mx={"auto"} py={"4rem"} px={'1rem'}>
       <Box textAlign={"center"} mb={'3.5rem'}>
         <TextGradient>Why Choose Cryptize</TextGradient>
         <SectionHeading>Secured And Easy to Use</SectionHeading>

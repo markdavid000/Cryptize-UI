@@ -8,15 +8,19 @@ import {
 
 const FeaturesLayout = (props) => {
   return (
-    <Flex alignItems={"center"}>
+    <Flex
+      alignItems={"center"}
+      flexDirection={["column", "column", "column", "row"]}
+      gap={'2rem'}
+      >
       <Stack spacing={"45px"}>
         {props.featuresItems1.map((featuresItem, index) => (
           <Box
             key={index}
-            textAlign={"right"}
+            textAlign={["center", "center", "center", "right"]}
             display={"flex"}
             flexDirection={"column"}
-            alignItems={"flex-end"}
+            alignItems={["center", "center", "center", "flex-end"]}
           >
             <GridImg img={featuresItem.img} />
             <GridTitle>{featuresItem.title}</GridTitle>
@@ -31,7 +35,13 @@ const FeaturesLayout = (props) => {
       </Box>
       <Stack spacing={"45px"}>
         {props.featuresItems2.map((featuresItem, index) => (
-          <Box key={index}>
+          <Box
+            key={index}
+            textAlign={["center", "center", "center", "left"]}
+            display={"flex"}
+            flexDirection={"column"}
+            alignItems={["center", "center", "center", "flex-start"]}
+          >
             <GridImg img={featuresItem.img} />
             <GridTitle>{featuresItem.title}</GridTitle>
             <Box w={"80%"}>

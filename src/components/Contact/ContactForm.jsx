@@ -89,8 +89,11 @@ const ContactForm = () => {
         bgGradient="linear(to-tr, #A55EFE, #3547F1, #3547F1, #2C79D5)"
         p={"50px"}
       >
-        <Stack direction={"column"} align={"center"} spacing={"20px"}>
-          <Stack direction={"row"}>
+        <Stack
+          direction={"column"}
+          spacing={"20px"}
+        >
+          <Stack direction={["column", "column", "row"]} spacing={'20px'}>
             <Input
               id="firstName"
               onChange={fNameHandler}
