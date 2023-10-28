@@ -14,7 +14,7 @@ const TestimonialSlide = (props) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 8000,
+    speed: 4000,
     autoplaySpeed: 5000,
     pauseOnHover: true,
     nextArrow: <CustomNextArrow />,
