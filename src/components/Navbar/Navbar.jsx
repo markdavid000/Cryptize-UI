@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
   Box,
   Flex,
@@ -48,51 +48,51 @@ const Navbar = () => {
               <NavBtn />
             </Box>
           </Hide>
-            <Show below="lg">
-              <Button
-                ref={btnRef}
-                bg={"transparent"}
-                onClick={onOpen}
-                _hover={{
-                  bg: "transparent",
-                }}
-                _focus={{
-                  outline: "none",
-                }}
-              >
-                <Icon as={CgMenuLeft} fontSize={"2.5rem"} color={"white"} />
-              </Button>
-              <Drawer
-                isOpen={isOpen}
-                placement="right"
-                onClose={onClose}
-                finalFocusRef={btnRef}
-              >
-                <DrawerOverlay />
-                <DrawerContent bg={"black"}>
-                  <DrawerCloseButton
-                  fontSize={'1.2rem'}
-                    color={"white"}
-                    _focus={{
-                      outline: "none",
-                    }}
-                  />
-                  <Flex
-                    gap={"2.5rem"}
-                    alignItems={"center"}
-                    flexDirection={"column"}
-                    justifyContent={"center"}
-                    h={"100vh"}
-                  >
-                    <NavLinks>Home</NavLinks>
-                    <NavLinks>About</NavLinks>
-                    <NavLinks>Services</NavLinks>
-                    <NavLinks>Pages</NavLinks>
-                    <NavLinks>Contact</NavLinks>
-                  </Flex>
-                </DrawerContent>
-              </Drawer>
-            </Show>
+          <Show below="lg">
+            <Button
+              ref={btnRef}
+              bg={"transparent"}
+              onClick={onOpen}
+              _hover={{
+                bg: "transparent",
+              }}
+              _focus={{
+                outline: "none",
+              }}
+            >
+              <Icon as={CgMenuLeft} fontSize={"2.5rem"} color={"white"} />
+            </Button>
+            <Drawer
+              isOpen={isOpen}
+              placement="right"
+              onClose={onClose}
+              finalFocusRef={btnRef}
+            >
+              <DrawerOverlay />
+              <DrawerContent bg={"black"}>
+                <DrawerCloseButton
+                  fontSize={"1.2rem"}
+                  color={"white"}
+                  _focus={{
+                    outline: "none",
+                  }}
+                />
+                <Flex
+                  gap={"2.5rem"}
+                  alignItems={"center"}
+                  flexDirection={"column"}
+                  justifyContent={"center"}
+                  h={"100vh"}
+                >
+                  <NavLinks>Home</NavLinks>
+                  <NavLinks>About</NavLinks>
+                  <NavLinks>Services</NavLinks>
+                  <NavLinks>Pages</NavLinks>
+                  <NavLinks>Contact</NavLinks>
+                </Flex>
+              </DrawerContent>
+            </Drawer>
+          </Show>
         </Flex>
       </Box>
     </Box>
