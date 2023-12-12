@@ -11,7 +11,6 @@ import {
   DrawerCloseButton,
   useDisclosure,
   Button,
-  Input,
   Icon,
 } from "@chakra-ui/react";
 import { NavLinks } from "./NavLinks";
